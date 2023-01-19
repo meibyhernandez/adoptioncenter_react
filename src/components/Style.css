@@ -3,6 +3,24 @@
     background-color: var(--color-grey);
 }
 
+.app__navbar-links {
+    flex: 1;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    list-style: none;
+}
+
+.app__navbar-links li {
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.app__navbar-links li:hover {
+    color: var(--color-grey);
+}
+
 
 .app__wrapper {
     display: flex;
