@@ -1,7 +1,7 @@
 import axios from "axios";
 
 
-export const BASE_URL = 'https://api.thecatapi.com/v1/images/search?limit=10';
+export const BASE_URL = 'https://api.thecatapi.com/v1/images/search?limit=4';
 
 const options = {
     
@@ -10,8 +10,8 @@ const options = {
     }
   };
 
-  export const  fetchFromAPI = async () => {
-   const {data} =  await axios.get(`${BASE_URL}`, 
+  export const  fetchFromAPI = async (url) => {
+   const {data} =  await axios.get(`${BASE_URL}&${url}`, 
     options); 
 
     return data;
